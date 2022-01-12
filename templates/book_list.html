@@ -2,19 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Posts</title>
+    <title>Book</title>
 </head>
 <body>
 <div>
     <ul>
-        {% for i in post %}
+        {% for i in book %}
         <li>
-            <h2> {{ i.title}} </h2>
+            <h2> {{ i.title }} </h2>
             <p> {{ i.description }} </p>
             <img src="{{ i.image.url }}" alt="">
+            <p> {{ i.created_date}} </p>
+            <p> {{ i.updated_date}} </p>
         </li>
-        {% end for %}
+        {% endfor %}
     </ul>
 </div>
+
 </body>
 </html>

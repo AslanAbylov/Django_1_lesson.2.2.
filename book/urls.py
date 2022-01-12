@@ -1,6 +1,6 @@
 from django.urls import path
-from . import views
+from book import views
 
 urlpatterns = [
-    path('posts', views.blog_all, name='posts'),
+    path('books/', views.get_books, name='books'),
 ]

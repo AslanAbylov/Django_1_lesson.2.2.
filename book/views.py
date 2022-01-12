@@ -1,6 +1,9 @@
 from django.shortcuts import render
-from . import models
+from django.shortcuts import render
+from book.models import Book
+from book import models
 
-def blog_all(request):
-    post = models.Post.objects.all()
-    return render(request, 'post_list.html', {'post' : post})
+
+def get_books(request):
+    book = models.Book.objects.all()
+    return render(request, 'book_list.html', {'book': book})
