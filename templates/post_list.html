@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Post</title>
+    <title>Posts</title>
 </head>
 <body>
 <div>
@@ -12,10 +12,10 @@
             <h2> {{ i.title }} </h2>
             <p> {{ i.description }} </p>
             <img src="{{ i.image.url }}" alt="">
+            <p>{{ i.created_date }}</p>
         </li>
         {% endfor %}
     </ul>
 </div>
-
 </body>
 </html>

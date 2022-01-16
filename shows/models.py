@@ -14,9 +14,10 @@ class TVShow(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField()
     image = models.ImageField(upload_to='')
-    quantity = models.ImageField()
+    quantity = models.IntegerField()
     genre = models.CharField(choices=GANER_CHOICE, max_length=100)
-    date_filmed = models.DateField
+    date_filmed = models.DateField(auto_now_add=True, null=True)
+
 
 
 
