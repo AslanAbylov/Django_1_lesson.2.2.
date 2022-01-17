@@ -14,7 +14,7 @@ class Book(models.Model):
     image = models.ImageField(upload_to='')
     pages = models.IntegerField(null=True)
     author = models.CharField(choices=AUTHOR_CHOICE, max_length=100, null=True)
-    date_books = models.DateField(null=True)
+    date_books = models.DateField(auto_now_add=True, null=True)
 
 
 
