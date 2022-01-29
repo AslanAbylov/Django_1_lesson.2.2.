@@ -6,11 +6,14 @@
 </head>
 <body>
 <div>
-    <h2><a href="/book/{{ books.id }}/">{{ books.title }}</a></h2>
+    <h2><a href="/books/{{ books.id }}/">{{ books.title }}</a></h2>
     <p> {{ books.description }} </p>
     <img src="{{ books.image.url }}" alt="">
     <p>{{ books.author }}</p>
     <p>{{ books.date_books }}</p>
+    <button type="button" class="btn btn-primary"><a href="/books/{{ books.id }}/update/">Change {{ object.title }}</a></button>
+    <button type="button" class="btn btn-primary"><a href="/books/{{ books.id }}/delete/">Delete {{ object.title }}</a></button>
+
 </div>
 </body>
 </html>

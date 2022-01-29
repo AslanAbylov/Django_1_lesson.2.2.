@@ -37,4 +37,3 @@ class Book(models.Model):
 
 
 
-
